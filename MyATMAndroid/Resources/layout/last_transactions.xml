@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:text=" Amount   |   Balance  |   Date  |  Description"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_width="wrap_content"
+        android:layout_height="90dp"
+        android:padding="15dp"
+        android:id="@+id/transactionsInfo"
+        android:textColor="#000" />
+
+    <ListView
+        android:id="@+id/lastTrasactionsView"
+        android:layout_width="fill_parent"
+        android:layout_height="450dp"
+        android:background="#eeee" />
+
+    <Button
+		android:text="Back"
+		android:layout_width="fill_parent"
+        android:layout_height="90dp"
+		android:onClick="BackClick"
+		android:id="@+id/lastTransactionsBackButton" />
+
+</LinearLayout>

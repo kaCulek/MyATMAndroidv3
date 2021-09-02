@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">>
+	
+    <GridLayout
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:rowCount="4"
+        android:columnCount="1"
+        android:id="@+id/gridLayout1">
+
+        <Button
+            android:text="Account Balance"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="ShowCurrentBalance"
+            android:id="@+id/accountBalance" />
+
+        <Button
+            android:text="Transfer Amount"
+            android:onClick="TransferAmountClick"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/transferAmount" />
+
+        <Button
+            android:text="Last 5 Transactions"
+            android:onClick="LastTransactionsClick"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/lastTransactions" />
+
+        <Button
+            android:text="Logout"
+            android:onClick="LogoutClick"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/logout" />
+        
+    </GridLayout>
+
+</LinearLayout>

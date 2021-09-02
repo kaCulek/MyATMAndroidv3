@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:text="Amount"
+        android:textAppearance="?android:attr/textAppearanceListItemSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="90dp"
+        android:padding="15dp"
+        android:id="@+id/transactionAmount"
+        android:textColor="#000" />
+
+    <TextView
+        android:text="Balance"
+        android:textAppearance="?android:attr/textAppearanceListItemSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="90dp"
+        android:padding="15dp"
+        android:id="@+id/transactionCurrentBalance"
+        android:layout_toRightOf="@+id/transactionAmount"
+        android:layout_alignParentRight="true"
+        android:textColor="#000" />
+
+    <TextView
+        android:text="Date"
+        android:textAppearance="?android:attr/textAppearanceListItemSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="90dp"
+        android:padding="15dp"
+        android:id="@+id/transactionDate"
+        android:layout_toRightOf="@+id/transactionCurrentBalance"
+        android:layout_alignParentRight="true"
+        android:textColor="#000" />
+
+    <TextView
+        android:text="Description"
+        android:textAppearance="?android:attr/textAppearanceListItemSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="90dp"
+        android:padding="15dp"
+        android:id="@+id/description"
+        android:layout_toRightOf="@+id/transactionDate"
+        android:layout_alignParentRight="true"
+        android:textColor="#000" />
+
+</LinearLayout>

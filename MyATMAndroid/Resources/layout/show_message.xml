@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    
+	    <GridLayout
+			android:minWidth="25px"
+			android:minHeight="25px"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:rowCount="3"
+			android:columnCount="1"
+			android:id="@+id/showMessageGridLayout" >
+
+		<TextView
+			android:layout_gravity=""
+			android:text="Message"
+			android:textAppearance="?android:attr/textAppearanceLarge"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:minWidth="125px"
+			android:minHeight="25px"
+			android:layout_weight="1"
+			android:id="@+id/showMessageLabel"
+			android:textColor="#DC143C"/>
+
+		<Button
+			android:text="Back"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:onClick="BackClick"
+			android:id="@+id/showMessageBackButton" />
+	
+		</GridLayout>
+</LinearLayout>

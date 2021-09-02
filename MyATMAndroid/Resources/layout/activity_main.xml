@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <GridLayout
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+		android:rowCount="5"
+		android:columnCount="1"
+		android:id="@+id/mainLayout">
+			<TextView
+				android:layout_gravity=""
+				android:text="Account Number:"
+				android:textAppearance="?android:attr/textAppearanceMedium"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:minWidth="125px"
+				android:minHeight="25px"
+				android:layout_weight="1"
+				android:id="@+id/cardText" />
+			<EditText
+				android:inputType="text"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:id="@+id/cardInput"
+				android:text="HR"  />
+			<TextView
+				android:text="Pin:"
+				android:textAppearance="?android:attr/textAppearanceMedium"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:id="@+id/pinText" />
+			<EditText
+				android:inputType="numberPassword"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:id="@+id/pinInput" />
+			<Button
+				android:text="Login"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:onClick="LoginClick"
+				android:id="@+id/button1" />
+	</GridLayout>
+</RelativeLayout>
